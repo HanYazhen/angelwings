@@ -1,0 +1,47 @@
+/*登录注册超链接*/
+.sign {
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+}
+#sign {
+    padding: 15px;
+    margin-left: 0;
+}
+#sign_up:hover {
+    color: blue;
+    text-decoration: underline;
+}
+#sign_in:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*登录窗体*/
+.sign_in .modal-sm {
+    margin: 150px auto;
+    width: 500px;
+}
+.sign_in input {
+    width: 50%;
+    display: inline;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+#checkid {
+    margin-bottom: 10px;
+}
+#change {
+    margin-left: 10%;
+}
+
+/*注册窗体*/
+.sign_up .modal-sm {
+    margin: 50px auto;
+    width: 500px;
+}
+.sign_up input {
+    width: 95%;
+    margin: 10px auto;
+}

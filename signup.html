@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>$NAME---天使之翼</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!--手机端-->
+        <div class="navbar-header" style="height: 40px;">
+            <!--logo-->
+            <a href="php/index.html" class="navbar-brand">
+                天使之翼
+            </a>
+            <!--资讯-->
+            <span class="visible-xs-inline" id="mobile_title">
+                    动态
+                </span>
+
+            <!--手机端侧边栏-->
+            <span class="visible-xs-inline" id="toggle-sidebar">自己</span>
+        </div>
+
+        <!--电脑端-->
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav" style="margin-top: 0">
+                <li class="active"><a href="php/index.html">动态</a></li>
+                <li><a href="news.html">资讯</a></li>
+                <li><a href="angel.php">天使之翼</a></li>
+                <li>
+                    <button style="background-color: inherit;" class="btn" type="button"><img src="css/imgs/wings.jpg">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!--手机端侧边栏-->
+<div id="mobile_side" class="visible-xs-block">
+    <ul class="nav">
+        <li><a href="myaction.html">个人动态</a></li>
+        <li><a href="articles.html">文章</a></li>
+        <li><a href="albums.html">相册</a></li>
+        <li><a href="messages.html">留言板</a></li>
+        <li><a href="php/setting.html">$NAME</a></li>
+    </ul>
+</div>
+
+<!--手机端第二层导航栏-->
+<div id="mobile_navbar" class="navbar-fixed-top visible-xs-block">
+    <span class="mobile_home"><a href="php/index.html" style="color: rgb(84,139,165);">动态</a></span>
+    <span class="mobile_news"><a href="news.html">资讯</a></span>
+    <span class="mobile_me"><a href="relateme.html">相关</a></span>
+    <span class="mobile_angel"><a href="angel.php">我们</a></span>
+</div>
+
+<!--电脑端侧栏-->
+<div class="hidden-xs navbar-fixed-top" id="side_navbar">
+    <ul>
+        <li><a href="relateme.html" class="text-right">与我相关</a></li>
+        <li><a href="myaction.html" class="text-right">个人动态</a></li>
+        <li><a href="articles.html" class="text-right">文章</a></li>
+        <li><a href="albums.html" class="text-right">相册</a></li>
+        <li><a href="messages.html" class="text-right">留言板</a></li>
+        <li class="connection">
+            <div class="attention text-center">
+                关注<br>
+                <span class="attention_number">10</span>
+            </div>
+            <div class="fans text-center">
+                粉丝<br>
+                <span class="fans_number">100</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--主要内容-->
+<div id="main_content">
+    <form method="post">
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" class="form-control" id="username" placeholder="请输入您的用户名">
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" placeholder="请输入您的密码">
+        </div>
+        <div class="form-group">
+            <label for="confirm_pass">确认密码</label>
+            <input type="password" class="form-control" id="confirm_pass" placeholder="请确认您的密码">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" class="form-control" id="email" placeholder="请输入绑定邮箱">
+        </div>
+        <div class="form-group">
+            <label for="checkid">验证码</label><br>
+            <input type="text" style="width: 50%;display: inline;" class="form-control" id="checkid" placeholder="请输入验证码">
+            <a>看不清，换一张</a>
+            <span id="check_id"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">注册</button>
+    </form>
+</div>
+
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/simpler-sidebar.min.js"></script>
+<script src="common/common.js"></script>
+
+
+</body>
+</html>

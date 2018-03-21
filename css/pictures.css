@@ -1,0 +1,72 @@
+/*相册导航栏*/
+#picture_nav {
+    width: 680px;
+    margin: 60px auto 0 22%;
+}
+
+/*主要内容*/
+#main_content {
+    /*margin: 60px auto 0 22%;*/
+    margin-left: 22%;
+    width: 695px;
+}
+#main_content .content_item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+#main_content .content_item .content_picture {
+    cursor: pointer;
+    width: 155px;
+    height: 155px;
+    overflow: hidden;
+}
+#main_content .content_item .content_picture img {
+    width: 219px;
+    height: 330px;
+    margin-left: -32px;
+    margin-top: -93px;
+}
+/*相册底部*/
+#main_content .content_item .content_foot {
+    width: 155px;
+    display: inline-block;
+    background-color: rgb(231, 231, 231);
+}
+
+/*手机端*/
+@media only screen and (max-width: 767px) {
+    #main_content {
+        width: 97%;
+        margin: 85px auto;
+    }
+    #main_content .content_item {
+        width: 45.7%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    #main_content .content_item .content_picture {
+        width: 100%;
+    }
+    #main_content .content_item .content_foot {
+        width: 100%;
+    }
+}
+
+/*平板端*/
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    #picture_nav {
+        width: 550px;
+    }
+    #main_content {
+        margin-left: 21%;
+        width: 600px;
+    }
+    #main_content .content_item .content_picture {
+        width: 170px;
+        height: 170px;
+    }
+    #main_content .content_item .content_foot {
+        width: 170px;
+    }
+}

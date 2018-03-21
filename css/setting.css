@@ -1,0 +1,26 @@
+/*主要部分*/
+#main_content {
+    margin: 60px auto 0 22%;
+    width: 50%;
+}
+/*#main_content .content_item {
+    text-indent: 2em;
+}*/
+
+.edit {
+    display: none;
+}
+
+#main_content .content_item .title {
+    margin: 20px auto;
+    font-weight: bolder;
+}
+#main_content .content_item .form-group {
+    font-weight: inherit;
+}
+#main_content .content_item .form-group .col-sm-2 {
+    font-weight: 500;
+}
+#main_content .content_item .form-group .col-sm-10 {
+    margin-bottom: 20px;
+}

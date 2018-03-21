@@ -1,0 +1,573 @@
+/*电脑端侧栏*/
+#groups {
+    display: none;
+}
+
+/*电脑端导航栏*/
+.to_personal {
+    cursor: pointer;
+}
+
+.to_college {
+    cursor: pointer;
+}
+
+.to_fans {
+    cursor: pointer;
+}
+
+.to_follows {
+    cursor: pointer;
+}
+
+.to_fans:hover, .to_follows:hover {
+    color: black;
+}
+
+/*发表框*/
+#publish_area {
+    margin-top: 60px;
+    margin-left: 22.5%;
+    width: 50%;
+}
+
+#publish_area textarea {
+    resize: none;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+#publish_area div {
+    width: 100%;
+    height: 27px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#preview {
+    background: no-repeat center center;
+}
+
+.preview {
+    background: no-repeat center center;
+}
+
+/*内容为空，取消发布*/
+#null_cancel {
+    display: none;
+    position: absolute;
+}
+
+/*主要内容*/
+#main_content {
+    margin: auto auto 0 22.5%;
+    width: 50%;
+    clear: both;
+}
+
+#main_content .action .action_list {
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#main_content .action .action_list .action_left {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+#main_content .action .action_list .action_left .media-object {
+    width: 55px;
+    vertical-align: middle;
+}
+
+#main_content .action .action_list .action_head {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main_content .action .action_list .action_head .media-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#main_content .action .action_list .action_body {
+    margin-left: 65px;
+    margin-top: -3px;
+}
+
+#main_content .action .action_list .action_body .action_body_imgs {
+    margin: 5px 0 10px 0;
+}
+
+#main_content .action .action_list .action_body .action_body_imgs img {
+    /*height: 200px;*/
+}
+
+#main_content .action .action_list .action_body .action_body_bottom {
+    width: 100%;
+}
+
+#main_content .action .action_list .action_body .action_body_bottom button {
+    width: 32.8%;
+}
+
+#main_content .action .action_list .action_body .action_body_bottom textarea {
+    resize: none;
+    /*margin-top: 5px;*/
+    /*height: 40px;*/
+    /*margin-bottom: 5px;*/
+}
+
+/*#main_content .action .action_list .action_body .action_body_bottom div {
+    display: none;
+    width: 100%;
+    height: 35px;
+}*/
+
+#main_content .action .action_list .action_body .action_body_bottom div button {
+    width: 60px;
+}
+
+/*点赞*/
+/*.praise{
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    text-align:center;
+    position: relative;
+}
+#praise{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    margin:0 auto;
+}
+.praise img{
+    width:17px;
+    height:17px;
+    display:block;
+    margin: 0 auto;
+}
+.praise img.animation{
+    animation: myfirst 0.5s;
+    -moz-animation: myfirst 0.5s;
+    -webkit-animation: myfirst 0.5s;
+    -o-animation: myfirst 0.5s;
+}
+#add-num{
+    display:none;
+}
+#add-num .add-animation{
+    color: #000;
+    position:absolute;
+    top:-15px;
+    left: 10px;
+    font-size: 15px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -moz-opacity:0;
+    animation: mypraise 0.5s ;
+    -moz-animation: mypraise 0.5s ;
+    -webkit-animation: mypraise 0.5s ;
+    -o-animation: mypraise 0.5s ;
+    font-style:normal;
+}
+.praise .hover , #add-num .add-animation.hover, #praise-txt .hover , #praise-one .hover, #praise-two .hover {
+    color: #EB4F38;
+}
+@keyframes myfirst
+{
+    0%{
+        width:20px;
+        height:20px;
+    }
+    50%{
+        width:25px;
+        height:25px;
+    }
+    100% {
+        width:20px;
+        height:20px;
+    }
+}
+@-moz-keyframes myfirst
+{
+    0%{
+        width:20px;
+        height:20px;
+    }
+    50%{
+        width:25px;
+        height:25px;
+    }
+    100% {
+        width:20px;
+        height:20px;
+    }
+}
+@-webkit-keyframes myfirst
+{
+    0%{
+        width:20px;
+        height:20px;
+    }
+    50%{
+        width:25px;
+        height:25px;
+    }
+    100% {
+        width:20px;
+        height:20px;
+    }
+}
+@-o-keyframes myfirst
+{
+    0%{
+        width:20px;
+        height:20px;
+    }
+    50%{
+        width:25px;
+        height:25px;
+    }
+    100% {
+        width:20px;
+        height:20px;
+    }
+}
+@keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-moz-keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-webkit-keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-o-keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}*/
+
+/*回复区域*/
+#main_content .action .action_list .reply .reply_list {
+    margin-left: 55px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgba(225, 225, 225, 0.5);
+}
+
+#main_content .action .action_list .reply .reply_list .reply_left {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_left .media-left {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_left .media-left a img {
+    width: 45px;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_left .reply_head {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_left .reply_head .media-heading {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_body {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_body .reply_body_img {
+    margin: 5px 0 10px 0;
+}
+
+#main_content .action .action_list .reply .reply_list .reply_body .reply_body_img img {
+    height: 200px;
+}
+
+#main_content .action .action_list .reply .reply_more {
+    margin-left: 55px;
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+/*回复中的回复*/
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list {
+    margin: 0 auto 5px 45px;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_left {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_left .media-left {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_left .media-left a img {
+    width: 45px;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_left .rereply_head {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_left .rereply_head .media-heading {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_list .rereply_body {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+#main_content .action .action_list .reply .reply_list .rereply .rereply_more {
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+#reply_talk_2 textarea {
+    height: 40px;
+    width: 92.5%;
+    margin-left: 45px;
+    margin-bottom: 2px;
+}
+
+.reply_zan {
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(51, 122, 183);
+}
+
+/*对话弹框*/
+#curtain {
+    display: none;
+}
+
+#curtain #reply_talk {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    margin: 100px auto;
+}
+
+#curtain #reply_talk .talk_item {
+    margin-bottom: 3px;
+}
+
+#curtain #reply_talk .talk_item .talk_top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#curtain #reply_talk .talk_item .talk_body {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#curtain #reply_talk .talk_item .talk_content_top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#curtain #reply_talk .talk_item .talk_content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#curtain #reply_talk .talk_item .talk_bottom {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}
+
+/*手机端*/
+@media only screen and (max-width: 767px) {
+    #main_content {
+        margin: 85px auto;
+        width: 100%;
+        clear: both;
+    }
+
+    #main_content .content_item .content {
+        margin-left: 70px;
+    }
+
+    #main_content .content_item .content .content_bottom button {
+        width: 29%;
+        margin: 5px 0;
+    }
+
+    #main_content .content_item .content .content_bottom textarea {
+        width: 90%;
+    }
+}
+
+/*平板端*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #main_content .content_item .content {
+        margin-left: 70px;
+    }
+
+    #main_content .content_item .content .content_bottom button {
+        width: 31%;
+        margin: 5px 0;
+    }
+
+    #main_content .content_item .content .content_bottom textarea {
+        width: 95%;
+    }
+
+    #publish_area {
+        width: 55%;
+        margin-left: 21%;
+    }
+
+    #main_content {
+        margin: 50px auto 0 21%;
+        width: 55%;
+    }
+}

@@ -1,0 +1,21 @@
+/*主要部分*/
+#main_content {
+    margin-top: 60px;
+    margin-left: 22%;
+}
+#main_content .content_head {
+    width: 65%;
+    background-color: rgb(208, 216, 218);
+    margin-bottom: 10px;
+}
+#main_content .wallpaper {
+    background-color: rgba(216,218,128,0.51);
+    width: 65%;
+    height: 200px;
+}
+#main_content .sentence {
+    margin-top: 10px;
+    background-color: rgba(218,160,100,0.51);
+    width: 65%;
+    height: 150px;
+}

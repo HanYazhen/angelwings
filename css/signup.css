@@ -1,0 +1,27 @@
+#main_content {
+    margin: 70px auto 0 22.5%;
+    width: 50%;
+    clear: both;
+}
+
+#main_content form .fifty {
+    width: 50%;
+    margin-left: 10%;
+    display: inline;
+    margin-right: 2%;
+}
+
+#form_bottom {
+    margin-top: 30px;
+}
+
+#checkid {
+    width: 25%;
+    margin-left: 10%;
+    display: inline;
+    margin-right: 2%;
+}
+
+#captcha_img {
+    margin-right: 2%;
+}

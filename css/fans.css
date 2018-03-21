@@ -1,0 +1,31 @@
+/*主要内容*/
+#main_content {
+    margin: 60px auto 0 22%;
+    width: 50%;
+}
+#main_content .content_item {
+    display: inline-block;
+    background-color: rgb(245,245,245);
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 7px;
+}
+#main_content .content_item .fans_head {
+    text-align: center;
+}
+#main_content .content_item .fans_head img {
+    width: 100px;
+    height: 100px;
+}
+#main_content .content_item .fans_info {
+    text-align: center;
+}
+#main_content .content_item .fans_info .fans_name {
+    font-weight: bolder;
+}
+#main_content .content_item .fans_info .fans_college {
+    font-weight: normal;
+}
+#main_content .content_item .fans_info .fans_intro {
+    font-weight: lighter;
+}

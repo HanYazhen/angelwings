@@ -1,0 +1,30 @@
+/*主要部分*/
+#main_content {
+    margin: 70px auto 0 22.5%;
+    width: 50%;
+    clear: both;
+}
+#main_content .content_item {
+    background-color: rgb(237,237,237);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#main_content .content_item .collapse {
+    text-indent: 2em;
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+/*发表框*/
+#feedback_area {
+    margin-top: 60px;
+    margin-left: 22.5%;
+    width: 50%;
+}
+#feedback_area textarea {
+    resize: none;
+    margin-bottom: 5px;
+}
+#feedback_area input {
+    margin-left: 10px;
+}

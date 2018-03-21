@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(255, 201, 208);
+}
+#main_content {
+    margin-top: 60px;
+    margin-left: 22%;
+}
+#main_content .content_item {
+    width: 55%;
+    height: 200px;
+}

@@ -1,0 +1,185 @@
+/*取消textarea变化*/
+textarea {
+    resize: none;
+}
+/*顶部头像*/
+.navbar .collapse .nav li .nav_head {
+    padding: 0;
+}
+.navbar .collapse .nav li .nav_head img {
+    display: inline-block;
+
+}
+.navbar .collapse .nav li .nav_head div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.navbar .collapse .nav li .nav_head div .nav_head_name {
+    font-weight: 600;
+    color: black;
+}
+
+/*导航的背景*/
+.navbar .collapse .nav li a {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*电脑端侧栏*/
+#side_navbar {
+    margin-top: 50px;
+    margin-left: 11%;
+    background-color: rgb(232, 232, 232);
+    width: 10%;
+    height: 100%;
+}
+#side_navbar ul {
+    padding: 10px 0;
+}
+#side_navbar ul li {
+    list-style-type: none;
+}
+#side_navbar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+}
+#side_navbar ul li a:hover {
+    background-color: rgba(194, 194, 194, 0.50);
+}
+#side_navbar ul .connection {
+    margin-top: 20px;
+}
+#side_navbar ul .connection .attention {
+    display: inline-block;
+    width: 49%;
+    border-right: 1px dotted #beba67;
+    color: rgb(119,119,119);
+}
+#side_navbar ul .connection .fans {
+    display: inline-block;
+    width: 48%;
+    color: rgb(119,119,119);
+}
+#side_navbar ul li a img {
+    width: inherit;
+}
+
+/*电脑端*/
+@media only screen and (min-width: 1200px) {
+    /*导航栏居中*/
+    .navbar .collapse .nav {
+        /*width: 600px;*/
+        width: 790px;
+        /*margin: 0 auto;*/
+        margin-left: 16%;
+        float: none;
+    }
+    /*导航之间的距离*/
+    .navbar .collapse .nav li a {
+        /*margin: 0 10px;*/
+        margin-left: 20px;
+    }
+    /*logo的位置*/
+    .navbar .navbar-header .navbar-brand {
+        position: absolute;
+        left: 13.5%;
+    }
+}
+
+/*手机端*/
+@media only screen and (max-width: 767px){
+    /*让资讯居中*/
+    .navbar .navbar-header #mobile_title {
+        position: absolute;
+        padding-top: 12px;
+        right: 42.5%;
+        color: rgb(113, 176, 204);
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /*侧边栏*/
+    #toggle-sidebar {
+        color: rgb(119, 119, 119);
+        font-size: 18px;
+        float: right;
+        padding: 15px;
+    }
+    #mobile_side {
+        background-color: rgb(135, 206, 235);
+    }
+    #mobile_side .nav {
+        margin-top: 50px;
+        line-height: 40px;
+        list-style-type: none;
+    }
+    #mobile_side .nav a {
+        display: block;
+        padding: 0 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    #mobile_side .nav a:hover {
+        background-color: rgb(170, 233, 235);
+    }
+
+    /*第二层导航栏*/
+    #mobile_navbar {
+        margin-top: 56px;
+        width: 100%;
+        background-color: rgba(168, 232, 235, 0.24);
+    }
+    #mobile_navbar span {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        padding: 3px 0;
+    }
+    #mobile_navbar .mobile_home {
+        border-right: 1px dotted rgb(60, 60, 60);
+    }
+    #mobile_navbar .mobile_news {
+        border-right: 1px dotted rgb(60, 60, 60);
+    }
+    #mobile_navbar .mobile_angel {
+        border-left: 1px dotted rgb(60, 60, 60);
+    }
+    #mobile_navbar span a {
+        color: rgb(60, 60, 60);
+        font-size: 16px;
+        text-decoration: none;
+    }
+}
+
+/*平板端*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    /*导航栏居中*/
+    .navbar .collapse .nav {
+        width: 475px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    /*导航之间的距离*/
+    .navbar .collapse .nav li a {
+        margin: 0 10px;
+    }
+
+    /*logo的位置*/
+    .navbar .navbar-header .navbar-brand {
+        position: absolute;
+        left: 10%;
+    }
+
+    /*电脑端侧栏*/
+    #side_navbar {
+        margin-left: 7%;
+        width: 12%;
+    }
+}

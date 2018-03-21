@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>$NAME---天使之翼</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/myaction.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <!--手机端-->
+            <div class="navbar-header" style="height: 40px;">
+                <!--logo-->
+                <a href="php/index.html" class="navbar-brand">
+                    天使之翼
+                </a>
+                <!--资讯-->
+                <span class="visible-xs-inline" id="mobile_title">
+                    动态
+                </span>
+
+                <!--手机端侧边栏-->
+                <span class="visible-xs-inline" id="toggle-sidebar">自己</span>
+            </div>
+
+            <!--电脑端-->
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav" style="margin-top: 0">
+                    <li><a href="php/index.html">动态</a></li>
+                    <li><a href="news.html">校园资讯</a></li>
+                    <li><a href="angel.php">天使之翼</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-edit"></span> 发表动态</a></li>
+                    <li>
+                        <a class="nav_head" href="#">
+                            <img src="css/imgs/liuyifei.jpg">
+                            <div>
+                                <span class="nav_head_name">落雁孤飞</span>
+                                <span> ♂</span><br>
+                                <span>软件学院</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--手机端侧边栏-->
+    <div  id="mobile_side" class="visible-xs-block">
+        <ul class="nav">
+            <li><a href="myaction.html">个人动态</a></li>
+            <li><a href="articles.html">文章</a></li>
+            <li><a href="albums.html">相册</a></li>
+            <li><a href="messages.html">留言板</a></li>
+            <li><a href="php/setting.html">$NAME</a></li>
+        </ul>
+    </div>
+
+    <!--手机端第二层导航栏-->
+    <div id="mobile_navbar" class="navbar-fixed-top visible-xs-block">
+        <span class="mobile_home"><a href="php/index.html" style="color: rgb(84,139,165);">动态</a></span>
+        <span class="mobile_news"><a href="news.html">资讯</a></span>
+        <span class="mobile_me"><a href="relateme.html">相关</a></span>
+        <span class="mobile_angel"><a href="angel.php">我们</a></span>
+    </div>
+
+    <!--电脑端侧栏-->
+    <div class="hidden-xs navbar-fixed-top" id="side_navbar">
+        <ul>
+            <li><a href="relateme.html" class="text-right">与我相关</a></li>
+            <li><a href="myaction.html" class="text-right" style="background-color: rgba(194, 194, 194, 0.50);">个人动态</a></li>
+            <li><a href="articles.html" class="text-right">文章</a></li>
+            <li><a href="albums.html" class="text-right">相册</a></li>
+            <li><a href="messages.html" class="text-right">留言板</a></li>
+            <li><a href="#" class="text-right">小组</a></li>
+            <li class="connection">
+                <div class="attention text-center">
+                    关注<br>
+                    <span class="attention_number">10</span>
+                </div>
+                <div class="fans text-center">
+                    粉丝<br>
+                    <span class="fans_number">100</span>
+                </div>
+            </li>
+            <li>
+                <a>
+                    都说了是落雁孤飞
+                    <img src="css/imgs/angel.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--发表框-->
+    <form class="hidden-xs form-group" id="publish_area">
+        <textarea class="form-control" rows="2" placeholder="整个学校都在倾听你的声音！！！"></textarea>
+        <input class="btn btn-default pull-right" type="submit" value="确定">
+        <input class="btn btn-default pull-right" type="reset" value="取消">
+    </form>
+
+    <!--主要部分-->
+    <div id="main_content">
+        <ul class="media-list action">
+
+            <li class="media action_list">
+                <div class="media-left action_left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                    </a>
+                </div>
+                <div class="action_head">
+                    <h5 class="media-heading">落雁孤飞</h5>
+                    <span class="text-muted small">昨天 14：00</span>
+                </div>
+                <div class="action_body">
+                    <div>
+                        初次见面
+                    </div>
+                    <div class="action_body_imgs">
+                        <img src="css/imgs/2.jpg">
+                    </div>
+                    <div class="action_body_bottom">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-share"></span> 转发
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-star-empty"></span> 收藏
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-thumbs-up"></span> 赞
+                        </button>
+                        <textarea class="form-control" placeholder="我也说一句 ..." rows="1"></textarea>
+                    </div>
+                </div>
+
+                <!--回复区域-->
+                <ul class="media-list reply">
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                                <img src="css/imgs/2.jpg">
+                            </div>
+                        </div>
+
+                        <!--回复中的回复-->
+                        <ul class="media-list rereply">
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        回复<b>@落雁孤飞：</b>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                                <img src="css/imgs/2.jpg">
+                            </div>
+                        </div>
+
+                        <!--回复中的回复-->
+                        <ul class="media-list rereply">
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        回复<b>@落雁孤飞：</b>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        回复<b>@落雁孤飞：</b>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="rereply_more" href="#">还有5人回复了此评论</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="media action_list">
+                <div class="media-left action_left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                    </a>
+                </div>
+                <div class="action_head">
+                    <h5 class="media-heading">落雁孤飞</h5>
+                    <span class="text-muted small">昨天 14：00</span>
+                </div>
+                <div class="action_body">
+                    <div>
+                        初次见面
+                    </div>
+                    <div class="action_body_imgs">
+                        <img src="css/imgs/2.jpg">
+                    </div>
+                    <div class="action_body_bottom">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-share"></span> 转发
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-star-empty"></span> 收藏
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-thumbs-up"></span> 赞
+                        </button>
+                        <textarea class="form-control" placeholder="我也说一句 ..." rows="1"></textarea>
+                    </div>
+                </div>
+
+                <!--回复区域-->
+                <ul class="media-list reply">
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                                <img src="css/imgs/2.jpg">
+                            </div>
+                        </div>
+
+                        <!--回复中的回复-->
+                        <ul class="media-list rereply">
+                            <li class="media rereply_list">
+                                <div class="rereply_left">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="rereply_head">
+                                        <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                        <span class="text-muted small">昨天 14：00</span>
+                                    </div>
+                                </div>
+                                <div class="rereply_body">
+                                    <div>
+                                        初次见面
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="media reply_list">
+                        <div class="reply_left">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="css/imgs/liuyifei.jpg">
+                                </a>
+                            </div>
+                            <div class="reply_head">
+                                <span class="media-heading">落雁孤飞</span><b>：</b><br>
+                                <span class="text-muted small">昨天 14：00</span>
+                            </div>
+                        </div>
+                        <div class="reply_body">
+                            <div>
+                                初次见面
+                            </div>
+                            <div class="reply_body_img">
+                            </div>
+                        </div>
+                    </li>
+                    <div class="reply_more"><a href="#">查看更多</a></div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/simpler-sidebar.min.js"></script>
+    <script src="common/common.js"></script>
+
+    <script src="js/myaction.js"></script>
+
+
+</body>
+</html>
